@@ -1,0 +1,1273 @@
+/*Шрифты начало*/
+@font-face {
+    font-family:'Play';
+    font-style: 'Regular';
+    src: url(../fonts/Play.woff);
+}
+@font-face {
+    font-family:'Play Bold';
+    font-style: 'Bold';
+    src: url(../fonts/Play-Bold.woff) ;
+}
+@font-face {
+    font-family:'ShadowsInto';
+    font-style: 'Regular';
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf) ;
+}
+@font-face {
+    font-family:'ShadowsInto';
+    font-style: 'Regular';
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf) ;
+}
+/*Шрифты конец*/
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    background: url(../img/Fon.jpg);
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    background: url(../img/svg/эффект.svg) no-repeat center top;
+}
+.container_menu{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.h1{
+    font-family: "Play Bold";
+    font-size: 96px;
+    line-height: 111px;
+    color: white;
+}
+.h2{
+    font-family: "Play Bold";
+    font-size: 96px;
+    line-height: 111px;
+    color:red;
+    filter: drop-shadow(0px 0px  24px  rgba(255, 32, 32, 0.5));
+}
+/* header_start*/
+.header{
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header_menu{
+    display: none;
+}
+.header_left{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_left_logo{
+    margin-right: 65px;
+}
+.heder_left_nav_ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 19px;
+}
+.heder_left_nav_li{
+    margin-right: 32px;
+    font-family: "Play Bold";
+    font-size: 18px;
+    line-height: 21px;
+}
+.heder_left_nav_li_link{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 6px;
+}
+.heder_left_nav_li_link:focus,.heder_left_nav_li_link:hover{
+    border-bottom: 2px solid red;
+}
+.header_right{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_right_price_ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+.header_right_price_li{
+    background: rgba(48, 48, 48, 0.75);
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-right: 8px;
+}
+.header_right_price_text_1{
+    font-family: "Play Bold";
+    font-size: 12px;
+    line-height: 14px;
+    color:red;
+    padding-right: 6px;
+}
+.header_right_price_text_2{
+    font-family: "Play Bold";
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+}
+.header_right_price_li:last-child{
+    margin-right: 20px;
+}
+.header_right_price_mobil{
+    display: none;
+}
+.header_right_price_twitt{
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    margin: 10px 0;
+}
+.header_right_price_twitt_text{
+    font-family: "Play";
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    line-height: 100%;
+}
+.header_menu_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header_menu_pick{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_right_price_twitt_menu{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.heder_nav_close{
+    margin-right: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.heder_nav_close_krest{
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    width: 100%;
+   }
+.header_menu_price_ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.header_menu_price_li{
+    background: rgba(48, 48, 48, 0.75);
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+.heder_menu_nav_ul{
+    text-align: center;
+    margin: 50px 0;
+}
+.heder_menu_nav_li{
+    font-family: "Play Bold";
+    font-size: 48px;
+    line-height: 56px;
+    color: white;
+    margin-bottom: 15px;
+}
+.seti_menu{
+    text-align: center;
+}
+.footer_menu{
+    margin-top: 400px;
+}
+
+/*burger start*/
+
+.burger_menu{
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: none;
+    margin-left: 15px;
+}
+.burger_menu_lin_top{
+    display: block;
+    content: "";
+    border-bottom: 2px solid white;
+    width: 25px;
+    padding-top: 15px;
+    margin-left: 8px;
+}
+.burger_menu_lin_bot{
+    display: block;
+    content: "";
+    border-bottom: 2px solid white;
+    width: 25px;
+    padding-top: 7px;
+    margin-left: 8px;
+}
+
+/*burger end*/
+.title{
+    background: url(../img/svg/Humans.svg) no-repeat center;
+    max-width: 1150px;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 24px;
+}
+.title_text{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+.title_text_h2{
+    padding-bottom: 24px;
+}
+.title_text_t1{
+    font-family: "Play";
+    font-size: 18px;
+    line-height: 24px;
+    color: red;
+}
+.title_text_t2{
+    font-family: "Play";
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+/* header_end*/
+
+/*menu start*/
+.menu{
+    margin-bottom: 109px;
+}
+.main_focus{
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 84px;
+}
+.main_focus_text_butt{
+    padding: 12px 32px;
+    background-color: #FF2020;
+    filter: drop-shadow(0px 0px  24px  rgba(255, 32, 32, 0.5));
+    border-radius: 4px;
+    font-family: "Play Bold";
+    font-size: 18px;
+    line-height:24px;
+    color: white;
+    width: 161px;
+    display: block;
+    margin-bottom: 205px;
+}
+.focus_img_mobile{
+    display: none;
+}
+.main_focus_text{
+    margin-top: 24px;
+    padding-left: 17px;
+}
+.main_focus_kov{
+    margin-top: 239px;
+    padding-left: 70px;
+}
+.main_focus_text_text{
+    font-family: "Play";
+    font-size: 36px;
+    line-height:48px;
+    color: white;
+}
+.main_focus{
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+}
+.container_main_focus{
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+}
+.roadmap{
+    position: relative;
+    height: 693px;
+    padding-top:146px;
+    margin-bottom: 152px;
+}
+.roadmap_text{
+    width: 294px;
+    position: absolute;
+    top:369px;
+    left: 0;
+}
+.roadmap_text_title{
+    font-family: "Play Bold";
+    font-size: 64px;
+    line-height:74px;
+    color: red;
+}
+.roadmap_text_text{
+    font-family: "Play";
+    font-size: 20px;
+    line-height:24px;
+    color: white;
+}
+.map{
+    background: url(../img/svg/roadmap.svg) no-repeat bottom center;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.map_stage_1{
+    position: absolute;
+    top: -28px;
+    left: 204px;
+}
+.map_stage_2{
+    position: absolute;
+    top: 24px;
+    left: 513px;
+}
+.map_stage_3{
+    position: absolute;
+    top: 216px;
+    left: 569px;
+}
+.map_stage_4{
+    position: absolute;
+    top: 138px;
+    left: 917px;
+}
+.map_stage_5{
+    position: absolute;
+    top: 268px;
+    left: 1020px;
+}
+.map_stage_6{
+    position: absolute;
+    top: 415px;
+    left: 489px;
+}
+.title_stage{
+    font-family: "Play Bold";
+    font-size: 36px;
+    line-height:42px;
+    color: white;
+    margin-bottom: 12px;
+}
+.text{
+    font-family: "Play Bold";
+    font-size: 18px;
+    line-height:24px;
+    color: white;
+}
+.roadmap_text_stage_1{
+    max-width: 277px;
+    position: absolute;
+    top: -136px;
+    left: 234px;
+
+}
+.roadmap_text_stage_2{
+    max-width: 252px;
+    position: absolute;
+    top: -71px;
+    left: 536px;;
+}
+.roadmap_text_stage_3{
+    max-width: 245px;
+    position: absolute;
+    top: 86px;
+    left: 544px;
+}
+.roadmap_text_stage_4{
+    max-width: 236px;
+    position: absolute;
+    top: 57px;
+    left: 946px;
+}
+.roadmap_text_stage_5{
+    max-width: 171px;
+    position: absolute;
+    top: 221px;
+    left: 1072px;
+}
+.roadmap_text_stage_6{
+    max-width: 201px;
+    position: absolute;
+    top: 401px;
+    left: 318px;
+    text-align: right;
+}
+
+/*blu_red start*/
+
+.blu_red{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 140px;
+    height:  724px;
+}
+.blu_hum{
+    margin-top: 36px;
+}
+.red_hum{
+    margin-top: 46px;
+}
+.blu_red_title{
+    max-width: 455px;
+    margin-left:39px ;
+    margin-right: 18px;
+}
+.blu_farm{
+    position: absolute;
+    left: 336px;
+    top:460px;
+    max-width: 253px;
+    
+}
+.red_farm{
+    position: absolute;
+    left: 640px;
+    top:460px;
+    max-width: 380px;
+    text-align: right;
+}
+.bly_farm_title{
+    font-family: "Play Bold";
+    font-size: 36px;
+    line-height:24px;
+    color: #2094FF;
+    padding-bottom: 24px;
+}
+.bly_farm_text{
+    font-family: "Play";
+    font-size: 18px;
+    line-height:24px;
+    color: white;
+}
+.red_title{
+    color: #FF2020;
+}
+/*blu-red end*/
+
+/*anketa start*/
+
+.anketa{
+    max-width: 1410px;
+    margin: 0 auto;
+    margin-bottom: 216px;
+}
+.anketa_container{
+    border: 1px solid #656565;
+    padding: 20px;
+    max-width: 720px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.37);
+    position: relative;
+}
+
+.anketa_info{
+    border: 1px solid #656565;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 27px;
+    padding-bottom: 33px;
+}
+.anketa_info_title{
+    font-family: "Play Bold";
+    font-size: 49px;
+    line-height:58px;
+    color: white;
+}
+.anketa_info_lin{
+    max-width: 583px;
+    border-bottom: 1px solid #656565;
+    display: block;
+    content: '';
+    margin-top: 19px;
+}
+.anketa_info_lin_2{
+    max-width: 583px;
+    border-bottom: 1px solid #656565; 
+    display: block;
+    content: '';
+    margin-top: 6px;
+    margin-bottom: 19px;
+}
+.info_humen{
+    margin-bottom: 33px;
+}
+.info_humen_up{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+.info_humen_text{
+    font-family: "Play";
+    font-size: 18px;
+    line-height:24px;
+    color: #656565;
+    padding-right: 8px;
+}
+.info_humen_up_text_lin_name{
+    display: block;
+    content: '';
+    width: 390px;
+    border-bottom: 1px solid #656565; 
+    
+}
+.info_humen_up_text_lin_age{
+    width: 72px;
+    border-bottom: 1px solid #656565; 
+    display: block;
+    content: '';
+}
+.age{
+    padding-left: 15px;
+}
+.info_humen_bot{
+    display: flex;
+    flex-wrap: wrap;
+}
+.info_humen_up_text_lin_adress{
+    display: block;
+    content: '';
+    width: 327px;
+    border-bottom: 1px solid #656565; 
+    
+}
+.info_humen_up_text_lin_date{
+    width: 100px;
+    border-bottom: 1px solid #656565; 
+    display: block;
+    content: '';
+}
+.date{
+    padding-left: 15px;
+}
+
+.anketa_info_text{
+    font-family: "ShadowsInto";
+    font-size: 32px;
+    line-height:38px;
+    color: red;
+    filter: drop-shadow(0px 0px  24px  rgba(255, 32, 32, 0.5));
+    position: relative;
+}
+.anketa_logo{
+    position: absolute;
+    top:-17px;
+    left: 13px;
+    filter: none;
+}
+.anketa_text_1{
+    padding-left: 145px;
+}
+.anketa_text_2{
+    padding-left: 129px;
+}
+.anketa_text_3{
+    padding-left: 10px;
+}
+.anketa_text_4{
+    padding-left: 30px;
+}
+.anketa_text_5{
+    padding-left: 68px;
+}
+.anketa_text_6{
+    padding-left: 40px;
+}
+.anketa_text_7{
+    padding-left: 80px;
+}
+.anketa_text_8{
+    padding-left: 175px;
+}
+.anketa_text_9{
+    padding-left: 120px;
+}
+.anketa_text_10{
+    padding-left: 100px;
+}
+.anketa_text_11{
+    padding-left: 80px;
+}
+.anketa_text_12{
+    padding-left: 100px;
+}
+.anketa_text_13{
+    padding-left: 0px;
+}
+.anketa_text_14{
+    padding-left: 100px;
+}
+.anketa_pick_alximic{
+    position: absolute;
+    top: -192px;
+    right: -302px;
+}
+.anketa_pick_alximic_mob{
+    position: absolute;
+    top: -192px;
+    right: -302px;
+    display: none;
+}
+.anketa_pick_bog{
+    position: absolute;
+    bottom: -192px;
+    left: -360px;
+}
+
+/*anketa end*/
+
+/*pass start*/
+.pass{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    gap: 63px;
+    margin-bottom: 190px;
+}
+.pass_text_title{
+    padding-bottom: 32px;
+    max-width: 640px;
+}
+.pass_text_text{
+    max-width: 520px;
+    font-family: "Play";
+    font-size: 20px;
+    line-height:30px;
+    color: white;
+}
+/*pass end*/
+
+/*NOS start*/
+
+.NOS{
+    display: grid;
+    grid-template-columns:repeat(2,0fr 1fr) ;
+    gap: 131px;
+    margin-bottom: 190px;
+}
+.NOS_text_text{
+    max-width: 520px;
+    font-family: "Play";
+    font-size: 24px;
+    line-height:36px;
+    color: white;
+    margin-bottom: 49px;
+    padding-top: 73px;
+}
+.NOS_prozent_ul{
+    display: grid;
+    grid-template-columns: repeat(4,0fr);
+    gap:48px;
+    
+    
+}
+.NOS_prozent_li{
+    font-family: "Play Bold";
+    color:red;
+    filter: drop-shadow(0px 0px  24px  rgba(255, 32, 32, 0.5)); 
+    margin-top: auto;
+}
+.up_50{
+    font-size: 64px;
+    line-height: 74px;
+}
+.up_25{
+    font-size: 54px;
+    line-height: 62px;
+}
+.up_15{
+    font-size: 48px;
+    line-height: 56px;
+}
+.up_10{
+    font-size: 40px;
+    line-height: 46px;
+}
+.NOS_prozent_li_bot{
+    font-family: "Play";
+    font-size: 18px;
+    line-height: 21px;
+    color:white;
+    filter: none;
+}
+/*NOS end*/
+
+/*NFT start*/
+
+.NFT{
+    display: grid;
+    grid-template-columns: repeat(3,0fr);
+    gap:60px;
+}
+
+
+.NFT_text_text{
+    font-family: "Play";
+    font-size: 20px;
+    line-height: 30px;
+    color:white;
+    width: 426px;
+}
+.NFT_icon_mobile{
+    text-align: center;
+    display: none;
+}
+/*NFT end*/
+
+
+/*twitt start*/
+.twitt{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    
+}
+.twitt_text{
+    margin-top: 292px;
+    padding-right: 125px;
+}
+
+.twitt_text_text{
+    font-family: "Play";
+    font-size: 64px;
+    line-height: 74px;
+    color:white;
+}
+.twitt_red{
+    background: #FF2020;
+    width: 560px;
+    height: 763px;
+    margin-top: 292px;
+    z-index: 2;
+}
+.twitt_img{
+    position: relative;
+}
+.twitt_img_img{
+    position: absolute;
+    top: 0;
+    right: -443px;
+}
+/*twitt end*/
+/*menu end*/
+
+/*footer start*/
+
+.footer{
+    margin-bottom: 98px;
+}
+.footer_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.seti_text{
+    font-family: 'Play';
+    font-size: 14px;
+    line-height: 16px;
+    color: #7C7C7C;
+    padding-top: 17px;
+}
+.seti{
+    text-align: right;
+}
+.img_twtt,.img_tele{
+    padding-right: 10px;
+}
+
+/*footer end*/
+
+/*media start*/
+@media screen and (max-width: 1205px){
+.container_menu{
+    padding: 0 15px;
+}
+.container_menu{
+    padding: 0 15px;
+}
+.burger_menu{
+    display: block;
+}
+#header_left .heder_left_nav{
+    display: none;
+}
+.header_menu{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: black;
+    z-index: 10;
+    transform: translateX(100%);
+    transition:.2s all linear;
+}
+    .heder_nav_active{
+    transform: translateX(0);
+  }
+  .heder_nav_clous{
+    transform: translateX(100%);
+  }
+   
+   .heder_nav_close_krest:first-child{
+    transform: translateY(-50%) rotate(45deg);
+   }
+   .heder_nav_close_krest:last-child{
+    transform: translateY(-50%) rotate(-45deg);
+   }
+.map_stage_1{
+    position: absolute;
+    top: -28px;
+    left: 75px;
+}
+.map_stage_2{
+    position: absolute;
+    top: 24px;
+    left: 386px;
+}
+.map_stage_3{
+    position: absolute;
+    top: 216px;
+    left: 441px;
+}
+.map_stage_4{
+    position: absolute;
+    top: 138px;
+    left: 792px;
+}
+.map_stage_5{
+    position: absolute;
+    top: 268px;
+    left: 893px;
+}
+.map_stage_6{
+    position: absolute;
+    top: 415px;
+    left: 363px;
+}
+.roadmap_text_stage_1{
+    max-width: 277px;
+    position: absolute;
+    top: -136px;
+    left: 98px;
+
+}
+.roadmap_text_stage_2{
+    max-width: 252px;
+    position: absolute;
+    top: -71px;
+    left: 410px;
+}
+.roadmap_text_stage_3{
+    max-width: 245px;
+    position: absolute;
+    top: 70px;
+    left: 457px;
+}
+.roadmap_text_stage_4{
+    max-width: 236px;
+    position: absolute;
+    top: 57px;
+    left: 805px;
+}
+.roadmap_text_stage_5{
+    max-width: 171px;
+    position: absolute;
+    top: 333px;
+    left: 894px;
+}
+.roadmap_text_stage_6{
+    max-width: 201px;
+    position: absolute;
+    top: 401px;
+    left: 188px;
+    text-align: right;
+}
+.blu_red{
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 270px;
+    
+}
+.blu_farm{
+    position: static;
+    order: 2;
+    margin: 0 auto;
+}
+.red_farm{
+    position: static;
+    order:4 ;
+    margin: 0 auto;
+    text-align: center;
+}
+.blu_red_title{
+    order: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.blu_hum{
+    order: 1;
+    margin: 0 auto;
+}
+.red_hum{
+    order: 3;
+    margin: 0 auto;
+}
+.anketa{
+    margin-bottom: 437px;
+}
+.anketa_pick_alximic{
+    top: -410px;
+    right: -140px;
+}
+.anketa_pick_bog{
+    bottom: -495px;
+    left: 0px;
+}
+.NOS{
+    align-items: center
+}
+.NOS_prozent_ul{
+    grid-template-columns: repeat(2,0fr);
+}
+.NFT_icon{
+    display: none;
+}
+.NFT_icon_mobile{
+    display: block;
+}
+.twitt{
+    grid-template-columns: repeat(1,0fr);
+    justify-content: center
+}
+.twtt_container{
+    position: relative;
+}
+.twitt_text{
+    order:0;
+    position: absolute;
+    margin-top: 0px;
+    transform: translateY(-80%);
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+}
+.container_twitt_red{
+    width: 100%;
+}
+.twitt_red{
+    margin: 128px;
+}
+.twitt_img{
+    text-align: center;
+    order: -1;
+}
+.twitt_img_img{
+    position: static;
+}
+}
+@media screen and (max-width: 769px){
+.container{
+    margin-bottom: 180px;
+}
+    .header_right_price_twitt{
+     padding: 12px 12px;   
+    }
+.header_right_price_twitt_text{
+    display: none;
+}
+.header_right_price{
+    order: 1;
+    display: none;
+}
+.header_right_price_mobil{
+    display: block;
+    width: 100%;
+}
+.header_right_price_ul{
+    justify-content: space-evenly;
+}
+.main_focus{
+    margin-bottom: 220px;
+}
+.main_focus_text{
+    position: relative;
+}
+.main_focus_text_butt{
+    transform: translateY(-681%) translateX(-119%);
+    margin: 0;
+    text-transform: uppercase;
+}
+.main_focus_text{
+    margin-top: 243px;
+}
+.main_focus_text_text{
+    font-size: 18px;
+    line-height: 30px;
+}
+.container_main_focus{
+    transform: translateX(-60%);
+}
+.map{
+    background: url(../img/svg/Roadmap_mob.svg);
+    height: 670px;
+    width: 2px;
+}
+.roadmap{
+    padding: 0;
+}
+.roadmap_text{
+    transform: translateY(-450%) translateX(110%);
+    text-align: center;
+}
+.map_stage_1{
+    position: absolute;
+    top: -46px;
+    left: -34px;
+}
+.map_stage_2{
+    position: absolute;
+    top: 88px;
+    left: -34px;
+}
+.map_stage_3{
+    position: absolute;
+    top: 220px;
+    left: -34px;
+}
+.map_stage_4{
+    position: absolute;
+    top: 348px;
+    left: -34px;
+}
+.map_stage_5{
+    position: absolute;
+    top: 488px;
+    left: -34px;
+}
+.map_stage_6{
+    position: absolute;
+    top: 636px;
+    left: -34px;
+}
+.roadmap_text_stage_1{
+    width: 278px;
+    position: absolute;
+    top: -33px;
+    left: 40px;
+}
+.roadmap_text_stage_2{
+    width: 278px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+.roadmap_text_stage_3{
+    width: 278px;
+    position: absolute;
+    top: 232px;
+    left: 40px;
+}
+.roadmap_text_stage_4{
+    width: 278px;
+    position: absolute;
+    top: 363px;
+    left: 40px;
+}
+.roadmap_text_stage_5{
+    width: 278px;
+    position: absolute;
+    top: 501px;
+    left: 40px;
+}
+.roadmap_text_stage_6{
+    width: 278px;
+    position: absolute;
+    top: 648px;
+    left: 40px;
+    text-align: left;
+}
+.anketa_pick_alximic{
+    top: -453px;
+    right: -46px;
+}
+.pass{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+}
+.pass_img{
+    order: -1;
+}
+.pass_text_text{
+    margin: 0 auto;
+}
+.NOS{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+}
+.NOS_text{
+    margin: 0 auto;
+}
+.NOS_prozent_ul{
+    justify-content: space-around;
+}
+.NFT{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+}
+.NFT_text_text{
+    margin: 25px auto;
+}
+.anketa_pick_alximic{
+    display: none;
+}
+.anketa_pick_alximic_mob{
+    display: block;
+    right: -24px;
+    top:-411px
+}
+.twitt_red{
+margin: 60px auto;
+}
+}
+@media screen and (max-width: 500px){
+    .h1, .h2{
+        Font-size: 48px;
+        Line-height: 56px;
+    }
+    .header{
+        padding: 12px;
+    }
+    .header_right_price_li {
+        padding:6px 6px ;
+    }
+    .container{
+        margin-bottom: 60px;
+    }
+    .header_right_price_li{
+        margin-right: 0px;
+    }
+    .title_text{
+        text-align: center;
+        right: 10px;
+        bottom: 66px;
+    }
+    .title_text_h1{
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .title_text_h2{
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .main_focus_text_butt{
+        transform: translateY(-681%) translateX(-52%);
+    }
+    .title{
+        background: url(../img/img_mobile/svg/Humans.svg) no-repeat;
+        height: 493px;
+    }
+    .container_main_focus{
+        transform: translateX(-210px);
+    }
+    .focus_img_pk{
+        display: none;
+    }
+    .focus_img_mobile{
+        display: block;
+    }
+    .map{
+        margin: 0;
+    }
+    .roadmap_text{
+        left:-210px;
+        transform:translateY(-450%) translateX(82%)
+    }
+    .Hum_blou_mobile{
+        width: 100%;
+    }
+    .Hum_red_mobile{
+        width: 100%;
+    }
+    .anketa_pick_bog{
+        width: 100%;
+    }
+    .anketa{
+        margin-bottom: 342px;
+    }
+    .info_humen_up_text_lin_name{
+        width: 174px;
+    }
+    .info_humen_up_text_lin_age{
+        width: 174px;
+    }
+    .info_humen_up_text_lin_adress{
+        width: 145px;
+    }
+    .info_humen_up_text_lin_data{
+        width: 174px;
+    }
+
+    .anketa_pick_alximic_mob{
+        right:0px;
+    }
+    .anketa_logo{
+        position: static;
+    }
+
+    .anketa_pick_bog{
+        bottom: -367px;
+    }
+    .pass_img_mobile{
+        width: 100%;
+    }
+    .NOS{
+        gap: 0px;
+    }
+    .NOS_img_mobile{
+        width: 100%;
+    }
+    .NFT_img_mobile{
+        width: 100%;
+    }
+    .NFT_text_text{
+        width: auto;
+    }
+    .twitt_img{
+        margin-bottom: 100px;
+    }
+    .twitt_img_img{
+        width: 100%;
+    }
+    .twitt_red{
+        width:288px;
+        border-radius:25px;
+    }
+}
+
+/*media end*/
