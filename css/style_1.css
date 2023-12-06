@@ -802,7 +802,7 @@ body{
 /*footer end*/
 
 /*media start*/
-@media screen and (max-width: 1205px){
+@media screen and (max-width: 1300px){
 .container_menu{
     padding: 0 15px;
 }
