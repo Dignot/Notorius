@@ -423,10 +423,11 @@ body{
 
 .blu_red{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
     margin-bottom: 140px;
     height:  724px;
+
 }
 .blu_hum{
     margin-top: 36px;
@@ -802,7 +803,7 @@ body{
 /*footer end*/
 
 /*media start*/
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1250px){
 .container_menu{
     padding: 0 15px;
 }
